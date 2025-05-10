@@ -1,0 +1,75 @@
+body {
+  background: linear-gradient(
+    to bottom,
+    lightblue 30%,
+    lightgreen 70%,
+    red 100%
+  );
+  display: flex wrap;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin-bottom: 25px;
+  padding-bottom: 55px;
+}
+
+.vid1 {
+  width: 100vh;
+  height: 50vh;
+  object-fit: cover;
+  margin: 50px;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 20px;
+}
+
+.vid2 {
+  width: 100vh;
+  height: 50vh;
+  object-fit: cover;
+  margin: 50px;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 20px;
+}
+
+/* Card Matching Game Styles */
+#card-game {
+  text-align: center;
+  margin-top: 50px;
+}
+
+#game-board {
+  display: grid;
+  grid-template-columns: repeat(5, 100px);
+  gap: 10px;
+  justify-content: center;
+}
+
+.card {
+  width: 100px;
+  height: 150px;
+  background-color: lightblue;
+  border: 2px solid #333;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 24px;
+  font-weight: bold;
+  color: white;
+  cursor: crosshair;
+  user-select: none;
+}
+
+.card.flipped {
+  background-color: white;
+  color: black;
+  cursor: pointer;
+}
+
+.card.matched {
+  background-color: lightgreen;
+  color: black;
+  cursor: default;
+}
